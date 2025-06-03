@@ -2,10 +2,10 @@ say-hello:
 	echo "Hello, World!"
 
 setup:
-	./venv/bin/pip install -r requirements.txt  # на UNIX-системахt  
+	./venv/bin/pip install -r requirements.txt
 
 test:
-	pytest  
+	pytest
 
 lint:
 	flake8 .
