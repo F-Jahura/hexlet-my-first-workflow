@@ -1,19 +1,18 @@
 name: 
-    CI
+    show-directory
 
 on: 
    push
 
 jobs:
+ 
   build:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up and test
-        run: |
-          make setup
-          make test
-          make lint
+    steps: 
+      - uses: actions/checkout@v4
+    
+      - run:
+           make setup
+           make test
+           make lint
