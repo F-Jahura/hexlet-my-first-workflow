@@ -1,12 +1,13 @@
 say-hello:
-	echo "Hello, World!"
+		echo "Hello, World!"
 
 setup:
-	./venv/bin/pip install -r requirements.txt
+		python3 -m venv venv
+		./venv/bin/pip install -r requirements.txt
 
 test:
-	pytest
+		pytest
 
 lint:
-	flake8 .
+		flake8 .
  
