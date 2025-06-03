@@ -1,6 +1,3 @@
-say-hello:
-	echo "Hello, World!"
-
 setup: install build
 
 install:
@@ -19,4 +16,3 @@ lint:
 	npx eslint .
 
 .PHONY: build
-

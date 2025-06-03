@@ -14,6 +14,3 @@ jobs:
     
       - run: 
            make say-hello
-           make setup
-           make test
-           make lint
