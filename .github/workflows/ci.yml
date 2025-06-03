@@ -1,5 +1,5 @@
 name: 
-    show-directory
+    CI
 
 on: 
    push
