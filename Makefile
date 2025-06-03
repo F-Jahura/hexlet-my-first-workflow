@@ -1,18 +1,12 @@
-setup: install build
+say-hello:
+	echo "Hello, World!"
 
-install:
-	npm install
-
-build:
-	npm run build
-
-start:
-	npm start
+setup:
+	./venv/bin/pip install -r requirements.txt  # на UNIX-системахt  
 
 test:
-	npm test
+	pytest  
 
 lint:
-	npx eslint .
-
-.PHONY: build
+	flake8 .
+ 
