@@ -12,4 +12,8 @@ jobs:
     steps: 
       - uses: actions/checkout@v4
     
-      - run: make say-hello
+      - run: 
+           make say-hello
+           make setup
+           make test
+           make lint
